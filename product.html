@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">Chozabrendo</a>
+        <nav>
+            <div class="misc">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <a href="index.html" class="back">
+        <img class="back-img" src="/back.png" alt="back">
+        Остальные товары
+    </a>
+
+
+    <main class="product-details">
+        <div class="product-image">
+            <img src="T-shirtmrpenis.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1>mr.penis T-shirt</h1>
+            <div class="hero-product">
+                <img src="KopSteep.png" alt="">
+                <div class="hero-text-product">
+                    <p class="p-SteepKop">Steep<span><b>Kop</b></span></p>
+                </div>
+            </div>
+            <h4 class="product-info-details">
+                <div>-COTTON TEESHIRT </div>
+                <div>-SLIGHTLY OVERSIZED FIT </div>
+                <div>-OVERSIZED PRINTING AT FRONT AND BACK OF GARMENT</div>
+                <div>-VARIOUS PUFF PRINTING TECHNIQUES AT BOTH FRONT AND BACK OF GARMENT</div>
+            </h4>
+            <p class="price">$52.99</p>
+            <div class="options">
+                <label for="color">Color</label>
+                <select id="color">
+                    <option>Black</option>
+                    <!--<option>White</option>-->
+                </select>
+                <label for="size">Size</label>
+                <select id="size">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <label for="quantity">Quantity</label>
+                <select id="quantity" onchange="updatePrice()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="52">52</option>
+                </select>
+            </div>
+            <a href="https://www.donationalerts.com/r/steepkopzadrot" class="buy-button">Buy Now</a>
+        </div>
+    </main>
+
+    <script>
+        function updatePrice() {
+            const price = 52.99; // Base price
+            const quantity = document.getElementById("quantity").value;
+            const totalPrice = price * quantity;
+            document.querySelector(".price").innerText = `$${totalPrice.toFixed(2)}`;
+        }
+    </script>
+
+</body>
+</html>
