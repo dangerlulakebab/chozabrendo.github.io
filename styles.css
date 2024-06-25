@@ -1,0 +1,258 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 3vh;
+    background-color: transparent;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header .brand {
+    font-size: 3vh;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .brand:hover {
+    text-decoration: underline;
+}
+
+header .misc {
+    font-size: 2vh;
+}
+
+header .logo {
+    max-width: 100px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a, p {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 45px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: -10px;
+}
+
+.hero-text {
+    margin: 0;
+}
+
+.hero-text .p-merch-by{
+    margin-top: 0;
+    font-size: 16.5px;
+}
+
+.p-SteepKop {
+    color: white;
+}
+
+.p-SteepKop span {
+    color: rgb(174, 0, 255)
+}
+
+.hero-text .p-SteepKop {
+    font-size: 40px;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.product-item {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 1em;
+    width: 250px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-item h2, .product-item p {
+    margin: 0.5em 0;
+    font-size: 1rem;
+}
+
+.product-item .price {
+    text-align: left;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #000;
+    padding: 1em;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* FOR PRODUCT PAGES*/
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.back {
+    display: flex;
+    align-items: center; 
+    font-size: 16px;
+    margin: 30px 0 30px 10%;
+    cursor: pointer;
+}
+
+.back-img {
+    width: 42px;
+    margin-right: 5px;
+    clip-path: circle(46% at center);
+}
+
+main {
+    padding: 2em;
+}
+
+
+.hero-product {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-product img {
+    width: 50px;
+    height: auto;
+    margin-right: -10px;
+    border-radius: 50%;
+}
+
+.hero-text-product {
+    font-size: 16px;
+}
+
+
+.product-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2em;
+    gap: 2em;
+}
+
+.product-info-details {
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    color: var(--text-subdued, #6a6a6a);
+    margin: 25px 0 25px 0;
+}
+
+.product-image img {
+    max-width: 555px;
+    border-radius: 8px;
+    margin-right: 300px;
+}
+
+.product-info {
+    max-width: 555px;
+    text-align: left;
+    margin-left: -100px;
+}
+
+.product-info h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: white;
+    margin: 0.5em 0;
+}
+
+.options label {
+    display: block;
+    margin-top: 1em;
+}
+
+.options select {
+    width: 125%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+}
+
+.buy-button {
+    display: block;
+    width: 50%;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 1em;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}
